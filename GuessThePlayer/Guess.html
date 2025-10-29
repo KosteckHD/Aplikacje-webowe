@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the player!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stylePlay.css" />
+    <link rel="icon" type="x-icon" href="image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Bungee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="playSystem">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="navbar">
+                <ul>
+                    <li><a href="HomePage.html">HOME</a></li>
+                    <li><a href="Guess.html">PLAY!</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="title-section">
+                <div class="hometitle">GUESS THE PLAYER</div> 
+                <div class="undertext">BEST QUIZZES ABOUT FOOTBALL!</div>
+            </div>
+            <hr>
+        </div>
+        <!-- GAME -->
+         <div class="guesssys">
+        
+            <p  class="time" id="timer"></p>
+            <p  class="hint" id="data"></p>
+          <div>
+            <p  class="hint" id="result"></p>
+          </div>
+            <div class="pg">
+              <div>
+                <input class="gtx "type="text" id="guess">
+              </div>
+              <div>
+                <button class= "gb" id="submit" onclick="">SUBMIT</button>
+              </div>
+            </div>
+          <div>
+        </div>
+         <!-- FOOTER -->
+        <div class="footer">
+            <p>made by Michal Koscianek</p>
+            <p>aka KosteckHD :D, enjoy</p>
+        </div>
+    </div>
+    <script src="GuessPlayer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* Play SYSTEM */
+html{
+    background-color: #f0f0f0; 
+}
+.playSystem{
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    gap: 100px;
+}
+.time{
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    font-size: 500%;
+    color: black;
+}
+.hint{
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    font-size: 200%;
+    color: black;
+}
+.playarea{
+    display:flex;
+
+}
+.gueesssys{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.title{
+    display: block;
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    color: black;
+    font-size: 300%;
+    margin-bottom:none;
+}
+.pg{
+    display: flex;
+    grid-template-columns:auto;
+    justify-content: center;
+    
+}
+.gb{
+    display:block;
+    font-family:"BBH Sans Hegarty" ;
+    background-color: black;
+    color: white;
+    font-size:200%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.gtx{
+    font-family:"BBH Sans Hegarty" ;
+    font-size: 200%;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+/* Main content */
+.main {
+    flex: 1; 
+}
+.bl {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    display: flex;          
+    align-items: center;    
+    gap: 70px;             
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.pic1 img {
+  max-width: 100%;
+  border-radius: 10px;     
+}
+
+.desc {
+    width:75%;
+  font-family:"BBH Sans Hegarty" ;
+  font-size: 310%;
+  text-align: center;
+}
+
+.playb{
+    margin-top:50px;
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    font-size: 100px;
+    background-color: #000000;
+    color:white;
+    border-radius: 50px;
+    cursor:pointer;
+}
+/* Layout of site */
+.system {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap:15px;
+    background-color: #f0f0f0; 
+}

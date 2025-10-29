@@ -1,0 +1,80 @@
+/* Global classes */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+hr {
+    width: 100%;       
+    height: 2px;      
+    background-color: #313131;
+    border: none;      
+      
+}
+p{
+    font-size:8px;
+    color:grey;
+    line-height:0px;
+    margin-right:20px
+}
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+
+}
+ul li {
+  float:left;
+
+}
+.linkButton{
+  text-decoration: none;
+  color:white;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:"BBH Sans Hegarty" ;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+.desc {
+    width:75%;
+  font-family:"BBH Sans Hegarty" ;
+  font-size: 310%;
+  text-align: center;
+}
+/* Header */
+.header{
+    display: grid;
+    grid-template-rows: auto auto;
+    height: auto;
+}
+.undertext{
+    height:20px;
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    margin:none;
+}
+.hometitle{
+    
+    text-align: center;
+    font-family:"BBH Sans Hegarty" ;
+    font-size: 50px;
+    margin: none;
+    
+}
+.footer{
+  font-family:"BBH Sans Hegarty" ;
+  text-align: center;
+  margin:none;
+}
+
