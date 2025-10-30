@@ -4,7 +4,7 @@ let rounds = 0;
 const maxRounds = 1000;
 let timer = null;
 let timeLeft = 30;
-let lives=5
+let lives=2
 let points=0
 async function loadPlayers() {
   const response = await fetch("./players.json");
