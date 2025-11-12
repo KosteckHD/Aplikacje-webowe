@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     gap:50px;
+    
+}
+body{
     background-color: #f0f0f0; 
 }
 /* SHEET */
@@ -48,5 +51,105 @@
     display: flex;
 }
 .submitButton{
+    background-color: black;
+    color:white;
     font-family:"BBH Sans Hegarty" ;
+}
+.desc1{
+    font-size:clamp(1rem, 2vw + 0.5rem, 3.5rem);
+    font-family:"BBH Sans Hegarty" ;
+}
+.upperSheet img {
+    max-width: 100%;
+    width: clamp(200px, 25vw, 350px);
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.upperSheet img:hover {
+    transform: scale(1.05);
+}
+/* MEDIA QUERIES */
+/* FOR SCREEN SMALLER THAN 1024px */
+@media (max-width: 1024px) {
+    .sheet {
+        margin: 40px;
+        gap: 15px;
+    }
+
+    .upperSheet {
+        gap: 50px;
+    }
+
+    .namebox {
+        font-size: 130%;
+    }
+
+    .sheetdesc {
+        font-size: 110%;
+    }
+
+    .submitButton {
+        font-size: 130%;
+        padding: 8px 25px;
+    }
+}
+
+/* SMALL DEIVCES WITH SCREEN SMALLER THAN 600px */
+@media (max-width: 600px) {
+    .sheet {
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .upperSheet {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .upperSheet img {
+        width: 200px;
+        height: auto;
+    }
+
+    .desc1 {
+        font-size: 90%;
+        line-height: 1.3em;
+    }
+
+    .personalSheet {
+        align-items: center;
+        width: 100%;
+    }
+
+    .nameemail {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .namebox {
+        font-size: 120%;
+        width: 100%;
+    }
+
+    .sheetdesc {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    .descArea {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .submitButton {
+        font-size: 120%;
+        width: 80%;
+        text-align: center;
+    }
 }

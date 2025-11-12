@@ -1,44 +1,131 @@
-/* Main content */
-.main {
-    flex: 1; 
+/* LAYOUT OF HOME PAGE */
+.system {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 5vh;
+  background-color: #f0f0f0;
+  font-family: "BBH Sans Hegarty", sans-serif;
 }
+
+/* LAYOUT OF MAIN CONTENT */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  padding: 0 5vw;
+}
+ 
 .bl {
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    display: flex;          
-    align-items: center;    
-    gap: 70px;             
-    margin-left: 90px;
-    margin-right: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3%;
+  flex-wrap: wrap;
+  
+}
+
+
+.pic1 {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .pic1 img {
-  max-width: 100%;
-  border-radius: 10px;     
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.pic1 img:hover{
+  transform: scale(1.05);
 }
 
 .desc {
-    width:75%;
-  font-family:"BBH Sans Hegarty" ;
-  font-size: 310%;
+  flex: 1 1 55%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: clamp(1rem, 2vw + 0.5rem, 3.5rem);
+  font-weight: bold;
+  
 }
 
-.playb{
-    margin-top:50px;
-    text-align: center;
-    font-family:"BBH Sans Hegarty" ;
-    font-size: 100px;
-    background-color: #000000;
-    color:white;
-    border-radius: 50px;
-    cursor:pointer;
+/* BUTTONS */
+.playb {
+  margin-top: 2rem;
+  padding: 0.8em 2em;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+  
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family:"BBH Sans Hegarty" ;
 }
-/* Layout of site */
-.system {
-    display: flex;
+
+.playb:hover {
+  transform: scale(1.05);
+  background-color: #222;
+}
+
+.linkButton {
+  text-decoration: none;
+  color: white;
+}
+
+/* MEDIA QUERY FOR DEVICES */
+/* LAPTOPS WITH SCREEN WITH SMALLER THAN 1024px */
+@media (max-width: 1024px) {
+
+  .bl {
     flex-direction: column;
-    min-height: 100vh;
-    gap:15px;
-    background-color: #f0f0f0; 
+    gap: 3rem;
+  }
+
+  .pic1,
+  .desc {
+    flex: 1 1 100%;
+  }
+
+  .desc {
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+
+  .pic1 img {
+    max-width: 80%;
+  }
+
+  .playb {
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+}
+
+/* FOR SMARTPHONES WITH LESS THAN 600px SCREEN*/
+@media (max-width: 600px) {
+  .main {
+    gap: 6vh;
+    padding: 0 4vw;
+  }
+
+  .desc {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+  }
+
+  .pic1 img {
+    max-width: 70%;
+    border-radius: 10px;
+  }
+
+  .playb {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    padding: 0.8em 1.5em;
+  }
 }

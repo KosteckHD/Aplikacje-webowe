@@ -1,59 +1,133 @@
 /* Play SYSTEM */
-html{
-    background-color: #f0f0f0; 
+html {
+    background-color: #f0f0f0;
 }
-.playSystem{
+
+.playSystem {
     display: flex;
     flex-direction: column;
     align-items: auto;
     gap: 100px;
 }
-.time{
+
+.time {
     text-align: center;
-    font-family:"BBH Sans Hegarty" ;
+    font-family: "BBH Sans Hegarty";
     font-size: 500%;
     color: black;
 }
-.hint{
+
+.hint {
     text-align: center;
-    font-family:"BBH Sans Hegarty" ;
+    font-family: "BBH Sans Hegarty";
     font-size: 200%;
     color: black;
 }
-.playarea{
-    display:flex;
 
+.playarea {
+    display: flex;
 }
-.gueesssys{
+
+.guesssys {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
 }
-.title{
+
+.title {
     display: block;
     text-align: center;
-    font-family:"BBH Sans Hegarty" ;
+    font-family: "BBH Sans Hegarty";
     color: black;
     font-size: 300%;
-    margin-bottom:none;
+    margin-bottom: none;
 }
-.pg{
+
+.pg {
     display: flex;
-    grid-template-columns:auto;
     justify-content: center;
-    
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.gb{
-    display:block;
-    font-family:"BBH Sans Hegarty" ;
+
+.gb {
+    display: block;
+    font-family: "BBH Sans Hegarty";
     background-color: black;
     color: white;
-    font-size:200%;
+    font-size: 200%;
     border-radius: 100px;
     cursor: pointer;
+    padding: 10px 40px;
 }
-.gtx{
-    font-family:"BBH Sans Hegarty" ;
+
+.gtx {
+    font-family: "BBH Sans Hegarty";
     font-size: 200%;
     text-align: center;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.life {
+    text-align: center;
+    font-family: "BBH Sans Hegarty";
+    font-size: 200%;
+    color: black;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* MEDIUM DEVICES <1024px*/
+@media (max-width: 1024px) {
+    .time {
+        font-size: 400%;
+    }
+    .hint, .life {
+        font-size: 180%;
+    }
+    .gb {
+        font-size: 180%;
+        padding: 8px 30px;
+    }
+    .gtx {
+        font-size: 180%;
+        width: 250px;
+    }
+    .playSystem {
+        gap: 60px;
+    }
+}
+
+/* SMALL DEVICES <600px*/
+@media (max-width: 600px) {
+    .time {
+        font-size: 250%;
+    }
+    .hint, .life {
+        font-size: 100%;
+    }
+    .gb {
+        font-size: 100%;
+        padding: 6px 20px;
+        border-radius: 50px;
+    }
+    .gtx {
+        font-size: 100%;
+        width: 180px;
+    }
+    .pg {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .title {
+        font-size: 200%;
+    }
+    .playSystem {
+        gap: 40px;
+        
+    }
 }

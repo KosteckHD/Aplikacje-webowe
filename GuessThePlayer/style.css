@@ -47,7 +47,8 @@ ul li a:hover {
   background-color: #111111;
 }
 .desc {
-    width:75%;
+  width:75%;
+  height:75%;
   font-family:"BBH Sans Hegarty" ;
   font-size: 310%;
   text-align: center;
@@ -77,4 +78,3 @@ ul li a:hover {
   text-align: center;
   margin:none;
 }
-
